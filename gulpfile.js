@@ -62,12 +62,12 @@ gulp.task('img', function() {
       	})))
          .pipe(gulp.dest('production/assets/img')); // Выгружаем на продакшен
 });
-/*очистка директории*/
-gulp.task('clean', function() {
+/*очистка директории fron-end*/
+gulp.task('clean-Front', function() {
     return del.sync('production/assets/', 'production/applications/views/'); 
 });
-/*Таск сборки*/
-gulp.task('build', ['clean',  'img'], function() {
+/*Таск сборки Front-end*/
+gulp.task('build-Front', ['clean-Front',  'img'], function() {
     var buildCss = gulp.src('app/css/**/*')
     .pipe(gulp.dest('production/assets/css'))
 
@@ -81,6 +81,15 @@ gulp.task('build', ['clean',  'img'], function() {
     .pipe(gulp.dest('production/applications/views/'));
 });
 
+/*очистка директории back-end*/
+gulp.task('clean-Back', function() {
+    return del.sync('production/'); 
+});
+/*Таск сборки Back-end*/
+gulp.task('build-Back', ['clean-Back'], function() {
+    var buildBack = gulp.src('www/**/*')
+    .pipe(gulp.dest('production/'))
+});
 /*--------------------Утилита--------------*/
 gulp.task('clear', function () {
     return cache.clearAll();
