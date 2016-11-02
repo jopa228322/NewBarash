@@ -28,4 +28,13 @@ www- папка Гидры
 		router.php роутинг запросов
 		core/ - абстрактные классы
 		остальное понятно, модели, вьюхи(копировать с продакшена), контроллеры 
-	
+
+git clone //ссылка на проект
+git checkout dev
+
+
+Делаем изменения в папке app и только,затем пишем в cmd -    "gulp build-Front"
+git add .
+git commit -m "..."
+git push
+//branch dev	
