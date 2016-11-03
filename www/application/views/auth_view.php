@@ -23,6 +23,11 @@
 						<input type="password" name="password" placeholder="Пароль">
 					</div>
 				</div>
+				<div class="pass">
+					<div class="form-pass">
+						<input type="password" name="password2" placeholder="Подтвердите пароль">
+					</div>
+				</div>
 				<div class="name">
 					<div class="form-name">
 						<input type="text" name="name" placeholder="Имя">

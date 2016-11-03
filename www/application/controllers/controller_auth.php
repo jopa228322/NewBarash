@@ -11,11 +11,12 @@ class Controller_Auth extends Controller
 	function action_index()
 	{
 
-		if(isset($_POST['login']) && isset($_POST['password']) && isset($_POST['name']) && isset($_POST['sourname']))
+		if(isset($_POST['login']) && isset($_POST['password']) && isset($_POST['password2']) && isset($_POST['name']) && isset($_POST['sourname']))
 		{  
 
 			$login = $_POST['login'];
 			$password = $_POST['password'];
+			$password2 = $_POST['password2'];
 			$name = $_POST['name'];
 			$sourname = $_POST['sourname'];
 
@@ -28,7 +29,10 @@ class Controller_Auth extends Controller
 		   {
 		      $err[] = "Логин должен быть не меньше 3-х символов и не больше 30";
 		   }
-			
+			if($password != $password2)
+		   {
+		      $err[] = "Пароли не совпадают";
+		   }
 			$free_login = $this->model->check_login($login);
 
 			if (!$free_login) {
@@ -53,6 +57,6 @@ class Controller_Auth extends Controller
 			$this->view->generate('auth_view.php', 'template_view.php', $err);
 		}
 	}
-	
+
 	
 }
