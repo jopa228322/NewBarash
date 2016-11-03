@@ -18,10 +18,12 @@ class Controller_Login extends Controller
 			$password =$_POST['password'];
 			$isChecked = $this->model->check_user($login, $password);
 			if ($isChecked) {
-				header( "Location: http://" .$_SERVER['PHP_SELF'] );
+				//header( "Location: http://" .$_SERVER['PHP_SELF'] );
+				echo "da";
 			}
 			else
 			{
+				echo "net";
 				$data["login_status"] = $login;
 			}
 		}

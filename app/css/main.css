@@ -20,6 +20,166 @@ a {
   margin: 0 auto;
   width: 100%;
   min-width: 320px; }
+  .container .select-produkt > h1 {
+    font-size: 40px;
+    font-family: "GillSansNovaHeavy"; }
+    .container .select-produkt > h1 > span {
+      font-size: 112px;
+      font-family: "GillSansNovaHeavy"; }
+  .container .select-produkt .select-meat {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 0 1.9%; }
+    .container .select-produkt .select-meat .sheep {
+      border-color: #212121;
+      margin: 2px;
+      width: 27%;
+      padding: 15px;
+      border: 1px solid;
+      -webkit-border-radius: 70px;
+      border-radius: 70px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; }
+      .container .select-produkt .select-meat .sheep .img-icon {
+        width: 28%;
+        height: 80%;
+        padding: 1%; }
+      .container .select-produkt .select-meat .sheep .icon-text {
+        width: 55%;
+        padding: 1%;
+        margin: 0 auto; }
+        .container .select-produkt .select-meat .sheep .icon-text > h3 {
+          font-size: 16px;
+          font-family: "GillSansNovaHeavy"; }
+        .container .select-produkt .select-meat .sheep .icon-text > p {
+          font-size: 14px;
+          font-family: "GillSansNovaLight"; }
+    .container .select-produkt .select-meat .cow {
+      border-color: #212121;
+      margin: 2px;
+      width: 27%;
+      padding: 15px;
+      border: 1px solid;
+      -webkit-border-radius: 70px;
+      border-radius: 70px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; }
+      .container .select-produkt .select-meat .cow .img-icon {
+        width: 28%;
+        height: 80%;
+        padding: 1%; }
+      .container .select-produkt .select-meat .cow .icon-text {
+        width: 55%;
+        padding: 1%;
+        margin: 0 auto; }
+        .container .select-produkt .select-meat .cow .icon-text > h3 {
+          font-size: 16px;
+          font-family: "GillSansNovaHeavy"; }
+        .container .select-produkt .select-meat .cow .icon-text > p {
+          font-size: 14px;
+          font-family: "GillSansNovaLight"; }
+    .container .select-produkt .select-meat .chicken {
+      border-color: #212121;
+      margin: 2px;
+      width: 27%;
+      padding: 15px;
+      border: 1px solid;
+      -webkit-border-radius: 70px;
+      border-radius: 70px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; }
+      .container .select-produkt .select-meat .chicken .img-icon {
+        width: 28%;
+        height: 80%;
+        padding: 1%; }
+      .container .select-produkt .select-meat .chicken .icon-text {
+        width: 55%;
+        padding: 1%;
+        margin: 0 auto; }
+        .container .select-produkt .select-meat .chicken .icon-text > h3 {
+          font-size: 16px;
+          font-family: "GillSansNovaHeavy"; }
+        .container .select-produkt .select-meat .chicken .icon-text > p {
+          font-size: 14px;
+          font-family: "GillSansNovaLight"; }
+  .container .podbor-obertk {
+    width: 92%;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    .container .podbor-obertk .row-sel {
+      height: 100%;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      width: 100%; }
+      .container .podbor-obertk .row-sel .opis-sel-tov {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        width: 27%; }
+      .container .podbor-obertk .row-sel .privez-tovar {
+        width: 39%; }
+  .container .oform-zakaz {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .container .oform-zakaz .fio {
+      width: 30%;
+      text-align: center; }
+      .container .oform-zakaz .fio > input {
+        text-align: center;
+        border: 1px solid #212121;
+        -webkit-border-radius: 50px;
+        border-radius: 50px;
+        margin: 5%;
+        padding: 2%; }
+    .container .oform-zakaz .p-number {
+      width: 30%;
+      text-align: center; }
+      .container .oform-zakaz .p-number > input {
+        text-align: center;
+        border: 1px solid #212121;
+        -webkit-border-radius: 50px;
+        border-radius: 50px;
+        margin: 5%;
+        padding: 2%; }
+    .container .oform-zakaz .adres {
+      width: 30%;
+      text-align: center; }
+      .container .oform-zakaz .adres > input {
+        text-align: center;
+        border: 1px solid #212121;
+        -webkit-border-radius: 50px;
+        border-radius: 50px;
+        margin: 5%;
+        padding: 2%; }
 
 .row {
   height: 100%;
@@ -38,6 +198,114 @@ a {
   height: 100%;
   position: relative;
   z-index: 1; }
+  .screen-1 .zakazi .myzak {
+    margin: 5% 0 5%; }
+    .screen-1 .zakazi .myzak > h1 {
+      font-size: 36px; }
+  .screen-1 .zakazi .opiszakaza {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-shadow: 0px 0px 20px #ababab;
+    box-shadow: 0px 0px 20px #ababab;
+    margin: 5% 0 5%; }
+    .screen-1 .zakazi .opiszakaza .img-zakaz {
+      width: 18%; }
+      .screen-1 .zakazi .opiszakaza .img-zakaz .sheep {
+        margin: 12%; }
+    .screen-1 .zakazi .opiszakaza .about-zakaz {
+      width: 52%; }
+      .screen-1 .zakazi .opiszakaza .about-zakaz .text-about > h2 {
+        font-size: 33px;
+        font-family: "GillSansNovaHeavy";
+        margin: 5% 0 0; }
+      .screen-1 .zakazi .opiszakaza .about-zakaz .text-about > h3 {
+        font-size: 16px;
+        font-family: "GillSansNovaBook";
+        margin: 1% 0 0; }
+      .screen-1 .zakazi .opiszakaza .about-zakaz .stad-zakaz {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        margin-top: 1.5%; }
+        .screen-1 .zakazi .opiszakaza .about-zakaz .stad-zakaz .utoch-zakaz {
+          width: 20%;
+          text-align: center; }
+          .screen-1 .zakazi .opiszakaza .about-zakaz .stad-zakaz .utoch-zakaz > p {
+            font-size: 14px;
+            color: #adadad;
+            font-family: "GillSansNovaLight"; }
+          .screen-1 .zakazi .opiszakaza .about-zakaz .stad-zakaz .utoch-zakaz .dl-hr {
+            position: relative; }
+            .screen-1 .zakazi .opiszakaza .about-zakaz .stad-zakaz .utoch-zakaz .dl-hr > hr {
+              height: 2px;
+              background-color: #616161;
+              border-color: #616161;
+              -webkit-box-shadow: none;
+              box-shadow: none;
+              border: none; }
+            .screen-1 .zakazi .opiszakaza .about-zakaz .stad-zakaz .utoch-zakaz .dl-hr .dot {
+              position: absolute;
+              height: 8px;
+              width: 8px;
+              border: 1px solid #616161;
+              -webkit-border-radius: 50%;
+              border-radius: 50%;
+              top: -5px;
+              left: -webkit-calc(50% - 5px);
+              left: calc(50% - 5px);
+              background-color: white; }
+          .screen-1 .zakazi .opiszakaza .about-zakaz .stad-zakaz .utoch-zakaz .selected > hr {
+            color: #4caf50;
+            background-color: #4caf50; }
+          .screen-1 .zakazi .opiszakaza .about-zakaz .stad-zakaz .utoch-zakaz .selected .dot {
+            background-color: #4caf50;
+            border-color: #4caf50; }
+    .screen-1 .zakazi .opiszakaza .button-zakaz {
+      -webkit-align-self: center;
+      -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+      width: 24%;
+      margin: 0 auto; }
+      .screen-1 .zakazi .opiszakaza .button-zakaz .stop-zakaz > button {
+        background-image: url(../img/trash.png);
+        font-family: "GillSansNovaHeavy";
+        background-size: 104% 110%;
+        -webkit-border-radius: 70px;
+        border-radius: 70px;
+        border: none;
+        background-repeat: no-repeat;
+        background-position: center center;
+        padding: 5% 17%;
+        color: white;
+        font-size: 14px;
+        width: 100%;
+        display: block; }
+      .screen-1 .zakazi .opiszakaza .button-zakaz .menedjer > button {
+        background-image: url(../img/contact.png);
+        font-family: "GillSansNovaHeavy";
+        background-size: 104% 121%;
+        -webkit-border-radius: 70px;
+        border-radius: 70px;
+        border: none;
+        background-repeat: no-repeat;
+        background-position: center center;
+        padding: 5% 13%;
+        color: white;
+        font-size: 14px;
+        width: 100%;
+        display: block; }
   .screen-1 > header .info {
     width: 100%;
     background-color: #212121;
