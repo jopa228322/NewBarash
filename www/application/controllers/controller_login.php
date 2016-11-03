@@ -31,7 +31,7 @@ class Controller_Login extends Controller
 			$data["login_err"] = false;
 		}
 		
-		$this->view->generate('login_view.php', 'template_view.php', $data);
+		$this->view->generate('main_view.php', 'template_view.php', $data);
 	}
 	function action_logout()
 	{

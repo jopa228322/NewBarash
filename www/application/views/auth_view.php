@@ -1,5 +1,5 @@
-	<div class="bgc">
-		<div class="enter">
+
+		<div class="enter reg">
 			<div class="vhod">
 				<h1>РЕГИСТРАЦИЯ</h1>
 			</div>
@@ -11,7 +11,7 @@
 			}
 				
 			?>
-			<form action="#" method="post">
+			<form action="/auth/" method="post">
 			<div class="windavt">
 				<div class="email">
 					<div class="form-email">
@@ -51,4 +51,4 @@
 			</div>
 			</form>
 		</div>
-	</div>
+

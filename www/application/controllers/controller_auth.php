@@ -50,11 +50,11 @@ class Controller_Auth extends Controller
 
 			}
 			else {
-				$this->view->generate('auth_view.php', 'template_view.php', $err);
+				$this->view->generate('main_view.php', 'template_view.php', $err);
 			}	  
 		}
 		else {
-			$this->view->generate('auth_view.php', 'template_view.php', $err);
+			$this->view->generate('main_view.php', 'template_view.php', $err);
 		}
 	}
 

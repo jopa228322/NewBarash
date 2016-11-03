@@ -1,11 +1,11 @@
-<div class="bgc">
-		<div class="enter">
+
+		<div class="enter login">
 			<div class="vhod">
 				<h1>ВХОД</h1>
 			</div>
 			<?php echo ($_SESSION['user'] ? "Привет ".$_SESSION['user'] : '' );?>
 			<div class="windavt">
-			<form action="" method="post" class="<?php echo ($login_status ? 'error' : '' );?>">
+			<form action="/login/" method="post" class="<?php echo ($login_status ? 'error' : '' );?>">
 			<?php extract($data); ?>
 
 				<div class="log">
@@ -32,7 +32,7 @@
 			</div>
 			
 		</div>
-	</div>
+
 
 
 
