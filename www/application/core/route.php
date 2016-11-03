@@ -11,7 +11,6 @@ class Route
 		$action_name = 'index';
 		
 		$routes = explode('/', $_SERVER['REQUEST_URI']);
-		echo $routes[1];
 		
 		if ( !empty($routes[1]) )
 		{
