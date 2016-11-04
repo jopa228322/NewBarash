@@ -15,7 +15,8 @@ a
 	text-decoration: none
 	transition: 0.5s all
 
-
+#animal_sheep:checked + label
+	color: red
 .container
 	max-width: 1280px
 	margin: 0 auto
@@ -32,28 +33,36 @@ a
 			display: flex
 			justify-content: space-between
 			padding: 0 1.9% 
+
 			.sheep
-				border-color: #212121
-				margin: 2px
-				width: 27%
-				padding: 15px
-				border:  1px solid
-				border-radius: 70px
-				display: flex
-				.img-icon
-					width: 28%
-					height: 80%
-					padding: 1%
-				.icon-text
-					width: 55%
-					padding: 1%
-					margin: 0 auto	
-					>h3
-						font-size: 16px
-						font-family: "GillSansNovaHeavy"
-					>p
-						font-size: 14px
-						font-family: "GillSansNovaLight"	
+
+				label
+					border-color: #212121
+					margin: 2px
+					width: 27%
+					padding: 15px
+					border:  1px solid
+					border-radius: 70px
+					display: flex
+
+					>input
+						display: none
+						color: red
+
+						.img-icon
+							width: 28%
+							height: 80%
+							padding: 1%
+						.icon-text
+							width: 55%
+							padding: 1%
+							margin: 0 auto	
+							>h3
+								font-size: 16px
+								font-family: "GillSansNovaHeavy"
+							>p
+								font-size: 14px
+								font-family: "GillSansNovaLight"	
 
 			.cow
 				border-color: #212121
@@ -63,20 +72,25 @@ a
 				border:  1px solid
 				border-radius: 70px
 				display: flex
-				.img-icon
-					width: 28%
-					height: 80%
-					padding: 1%
-				.icon-text
-					width: 55%
-					padding: 1%
-					margin: 0 auto	
-					>h3
-						font-size: 16px
-						font-family: "GillSansNovaHeavy"
-					>p
-						font-size: 14px
-						font-family: "GillSansNovaLight"
+				>label			
+					>input
+						display: none
+						background-color: red
+
+						.img-icon
+							width: 28%
+							height: 80%
+							padding: 1%
+						.icon-text
+							width: 55%
+							padding: 1%
+							margin: 0 auto	
+							>h3
+								font-size: 16px
+								font-family: "GillSansNovaHeavy"
+							>p
+								font-size: 14px
+								font-family: "GillSansNovaLight"	
 			.chicken
 				border-color: #212121
 				margin: 2px
@@ -607,6 +621,7 @@ a
 			margin: 0  auto 
 			width: 100%
 			min-width: 320px
+			padding-top: 30px
 
 		
 
@@ -679,6 +694,7 @@ a
 		background-color: #fff
 		width: 33%
 		box-shadow: 2px 2px 8px rgba(21, 21, 21, 0.3)
+		border-radius: 10px
 		.vhod
 			padding-top: 3%
 			text-align: center
@@ -786,6 +802,7 @@ a
 		background-color: #fff
 		width: 33%
 		box-shadow: 2px 2px 8px rgba(21, 21, 21, 0.3)
+		border-radius: 10px
 		.imgs
 			width: 45%
 			margin: 0 auto

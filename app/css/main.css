@@ -15,6 +15,9 @@ a {
   -webkit-transition: 0.5s all;
   transition: 0.5s all; }
 
+#animal_sheep:checked + label {
+  color: red; }
+
 .container {
   max-width: 1280px;
   margin: 0 auto;
@@ -36,7 +39,7 @@ a {
     -ms-flex-pack: justify;
     justify-content: space-between;
     padding: 0 1.9%; }
-    .container .select-produkt .select-meat .sheep {
+    .container .select-produkt .select-meat .sheep label {
       border-color: #212121;
       margin: 2px;
       width: 27%;
@@ -48,20 +51,23 @@ a {
       display: -webkit-flex;
       display: -ms-flexbox;
       display: flex; }
-      .container .select-produkt .select-meat .sheep .img-icon {
-        width: 28%;
-        height: 80%;
-        padding: 1%; }
-      .container .select-produkt .select-meat .sheep .icon-text {
-        width: 55%;
-        padding: 1%;
-        margin: 0 auto; }
-        .container .select-produkt .select-meat .sheep .icon-text > h3 {
-          font-size: 16px;
-          font-family: "GillSansNovaHeavy"; }
-        .container .select-produkt .select-meat .sheep .icon-text > p {
-          font-size: 14px;
-          font-family: "GillSansNovaLight"; }
+      .container .select-produkt .select-meat .sheep label > input {
+        display: none;
+        color: red; }
+        .container .select-produkt .select-meat .sheep label > input .img-icon {
+          width: 28%;
+          height: 80%;
+          padding: 1%; }
+        .container .select-produkt .select-meat .sheep label > input .icon-text {
+          width: 55%;
+          padding: 1%;
+          margin: 0 auto; }
+          .container .select-produkt .select-meat .sheep label > input .icon-text > h3 {
+            font-size: 16px;
+            font-family: "GillSansNovaHeavy"; }
+          .container .select-produkt .select-meat .sheep label > input .icon-text > p {
+            font-size: 14px;
+            font-family: "GillSansNovaLight"; }
     .container .select-produkt .select-meat .cow {
       border-color: #212121;
       margin: 2px;
@@ -74,20 +80,23 @@ a {
       display: -webkit-flex;
       display: -ms-flexbox;
       display: flex; }
-      .container .select-produkt .select-meat .cow .img-icon {
-        width: 28%;
-        height: 80%;
-        padding: 1%; }
-      .container .select-produkt .select-meat .cow .icon-text {
-        width: 55%;
-        padding: 1%;
-        margin: 0 auto; }
-        .container .select-produkt .select-meat .cow .icon-text > h3 {
-          font-size: 16px;
-          font-family: "GillSansNovaHeavy"; }
-        .container .select-produkt .select-meat .cow .icon-text > p {
-          font-size: 14px;
-          font-family: "GillSansNovaLight"; }
+      .container .select-produkt .select-meat .cow > label > input {
+        display: none;
+        background-color: red; }
+        .container .select-produkt .select-meat .cow > label > input .img-icon {
+          width: 28%;
+          height: 80%;
+          padding: 1%; }
+        .container .select-produkt .select-meat .cow > label > input .icon-text {
+          width: 55%;
+          padding: 1%;
+          margin: 0 auto; }
+          .container .select-produkt .select-meat .cow > label > input .icon-text > h3 {
+            font-size: 16px;
+            font-family: "GillSansNovaHeavy"; }
+          .container .select-produkt .select-meat .cow > label > input .icon-text > p {
+            font-size: 14px;
+            font-family: "GillSansNovaLight"; }
     .container .select-produkt .select-meat .chicken {
       border-color: #212121;
       margin: 2px;
@@ -616,7 +625,8 @@ a {
       max-width: 1280px;
       margin: 0  auto;
       width: 100%;
-      min-width: 320px; }
+      min-width: 320px;
+      padding-top: 30px; }
       .screen-4__wrapper__containerfoot__menufoot {
         width: 80%;
         margin: 0 auto 1%;
@@ -694,7 +704,9 @@ a {
     background-color: #fff;
     width: 33%;
     -webkit-box-shadow: 2px 2px 8px rgba(21, 21, 21, 0.3);
-    box-shadow: 2px 2px 8px rgba(21, 21, 21, 0.3); }
+    box-shadow: 2px 2px 8px rgba(21, 21, 21, 0.3);
+    -webkit-border-radius: 10px;
+    border-radius: 10px; }
     .bgc .enter .vhod {
       padding-top: 3%;
       text-align: center;
@@ -803,7 +815,9 @@ a {
     background-color: #fff;
     width: 33%;
     -webkit-box-shadow: 2px 2px 8px rgba(21, 21, 21, 0.3);
-    box-shadow: 2px 2px 8px rgba(21, 21, 21, 0.3); }
+    box-shadow: 2px 2px 8px rgba(21, 21, 21, 0.3);
+    -webkit-border-radius: 10px;
+    border-radius: 10px; }
     .bgc .successful-enter .imgs {
       width: 45%;
       margin: 0 auto;
