@@ -64,7 +64,7 @@ gulp.task('img', function() {
 });
 /*очистка директории fron-end*/
 gulp.task('clean-Front', function() {
-    return del.sync('production/assets/', 'production/applications/views/'); 
+    return del.sync('production/assets/', 'production/application/views/'); 
 });
 /*Таск сборки Front-end*/
 gulp.task('build-Front', ['clean-Front',  'img'], function() {
@@ -78,7 +78,7 @@ gulp.task('build-Front', ['clean-Front',  'img'], function() {
     .pipe(gulp.dest('production/assets/js'))
 
     var buildHtml = gulp.src('app/*.html') 
-    .pipe(gulp.dest('production/applications/views/'));
+    .pipe(gulp.dest('production/application/views/'));
 });
 
 /*очистка директории back-end*/

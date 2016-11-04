@@ -15,9 +15,10 @@ class Controller_Login extends Controller
 		{  
 
 			$login = $_POST['login'];
-			$password =$_POST['password'];
+			$password = $_POST['password'];
 			$isChecked = $this->model->check_user($login, $password);
 			if ($isChecked) {
+<<<<<<< HEAD
 				//header( "Location: http://" .$_SERVER['PHP_SELF'] );
 				echo "da";
 			}
@@ -25,14 +26,27 @@ class Controller_Login extends Controller
 			{
 				echo "net";
 				$data["login_status"] = $login;
+=======
+				$_SESSION['user'] = $login;
+				header( "Location: http://" .$_SERVER['HTTP_HOST']."/login" );
+			}
+			else
+			{
+				$data["login_err"] = true;
+>>>>>>> 83e6a44bca5d357068c7ace3ee2fa647672b6dde
 			}
 		}
 		else
 		{
-			$data["login_status"] = "";
+			$data["login_err"] = false;
 		}
 		
-		$this->view->generate('login_view.php', 'template_view.php', $data);
+		$this->view->generate('main_view.php', 'template_view.php', $data);
+	}
+	function action_logout()
+	{
+		unset($_SESSION['user']);
+		header( "Location: http://" .$_SERVER['HTTP_HOST']."/login" );
 	}
 	
 }

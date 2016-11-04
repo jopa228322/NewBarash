@@ -1,21 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<link rel="stylesheet" href="css/main.css">
-	<meta charset="UTF-8">
-	<title>Document</title>
-</head>
-<body>
 	<div class="bgc">
 		<div class="successful-enter">
 			<div class="imgs">
-				<img src="img/path.png">
+				<img src="www/assets/img/path.png">
 			</div>
 			<div class="successful-authorize">
 				ВЫ УСПЕШНО АВТОРИЗОВАЛИСЬ
 			</div>
 		</div>
 	</div>
-	
-</body>
-</html>

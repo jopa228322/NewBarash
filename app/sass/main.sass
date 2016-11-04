@@ -1,6 +1,5 @@
 
 body
-
 	margin: 0
 	outline: 0
 	padding: 0
@@ -8,6 +7,27 @@ body
 	img
 		width: 100%
 		height: 100%
+	.obert-barash
+		position: fixed
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		background-color: #212121
+		z-index: 2
+		h3
+			color: #fff
+			text-align: center
+			letter-spacing: 2.5px
+	.imgbarash
+		width: 270px
+		height: 200px
+		margin: 20% auto 0
+		position: relative
+		z-index: 5
+		background-image: url(../img/bye.gif)
+		background-size: cover 
+	
 html
 	height: 100%	
 	
@@ -165,7 +185,13 @@ a
 
 
 
-
+.project
+	display: none
+	position: fixed
+	top: -100%
+	height: 100%
+	z-index: 5
+	width: 100%
 
 .row
 	height: 100%
@@ -176,7 +202,7 @@ a
 
 
 .screen-1 
-	height: 100%
+	height: 100% 
 	position: relative
 	z-index: 1
 	.zakazi
@@ -457,16 +483,46 @@ a
 			-webkit-transform: skew(-50deg)
 			-moz-transform: skew(-50deg)
 			-o-transform: skew(-50deg)
-
+.separator
+		width: 30px
+		height: 120px
+		position: absolute
+		top: calc(50% - 60px)
+		left: calc(50% - 15px)
+		z-index: 55
+		border: 1px solid #212121
+		border-radius: 15px
+		background-color: #FFF
+		display: flex
+		flex-direction: column
+		justify-content: space-around
+		align-items: center
+		padding: 25px 0
+		box-sizing: border-box
+		span
+			display: block
+			width: 10px
+			height: 10px
+			border-radius: 50%
+			border: 1px solid #212121
+			&.active
+				background-color: #212121
+.close_button
+		height: 50px
+		width: 50px 
+		position: absolute
+		right: 20px
+		top: 20px
+		font-size: 50px
+		cursor: pointer
+		z-index: 5
 .screen-2
 	height: 100%
-	position: fixed
-	top: 0
-	bottom: 0
 	width: 100%
-	display: none
-	z-index: 3
-
+	//z-index: 3
+	position: absolute
+	
+	
 	.wrapper
 		height: 100%
 
@@ -479,8 +535,6 @@ a
 
 		.screen-2__left-column
 			background-color: white
-			left: -50%
-			
 			background-image: url("../img/left-screen.png")
 			background-size: cover
 			background-repeat: no-repeat
@@ -488,7 +542,7 @@ a
 
 		.screen-2__right-column
 			background-color: white
-			right: -50%
+			
 		
 
 			.screen-2__right-column__opisan
@@ -536,12 +590,12 @@ a
 
 .screen-3	
 	height: 100%
-	position: fixed
+	position: absolute
 	top: 0
 	bottom: 0
 	width: 100%
 	display: none
-	z-index: 4
+	//z-index: 4
 
 	.wrapper
 		height: 100%
@@ -551,11 +605,12 @@ a
 			min-width: 640px
 			height: 100%
 			position: relative
+			
 
 
 		.screen-3__left-column
 			background-color: white
-			left: -50%
+			top: -100%
 			background-image: url("../img/left-screen.png")
 			background-size: cover
 			background-repeat: no-repeat
@@ -563,7 +618,7 @@ a
 
 		.screen-3__right-column
 			background-color: white
-			right: -50%
+			bottom: -100%
 		
 
 			&__opisan
@@ -573,6 +628,7 @@ a
 				margin: 0 auto
 				padding-top: 3%
 				padding-bottom: 3%
+				box-sizing: border-box
 
 				
 				&__produk
@@ -612,6 +668,7 @@ a
 .screen-4					
 	position: relative
 	z-index: 5
+	//display: none
 
 	&__wrapper
 		height: 100%

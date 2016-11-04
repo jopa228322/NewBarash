@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 class Model_Login extends Model
 {
 	
@@ -7,7 +7,7 @@ class Model_Login extends Model
 	{	
 		$query = "SELECT `password` FROM `users` WHERE `login` LIKE {?}";
 		$passwordDB = $this->db->selectCell($query, array($login));
-		if ($passwordDB == $password) {
+		if ($passwordDB == md5($password)) {
 			return true;
 		}
 		else {
